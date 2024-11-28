@@ -24,9 +24,8 @@ async def add_task(
     tasks.append(task)
     return {"ok": True}
 
-
-# @app.get("/tasks")
-# def get_tasks():
-#     task = Task(name="Запиши это видео")
-#     return {"data": task}
+@app.get("/tasks")
+def get_tasks():
+    task = STask(name="Запиши это видео")
+    return {"data": task}
 
